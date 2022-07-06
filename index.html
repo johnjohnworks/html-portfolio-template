@@ -48,8 +48,8 @@
             flex: auto;
             display: flex;
             flex-direction: column;
-            gap: 1.375em;
-            column-gap: 1.375em;
+            gap: 0px;
+            column-gap: 0px;
         }
 
         .page main .thumbnails .thumbnail {
@@ -63,7 +63,7 @@
 
         h1 {
             font-weight: 100;
-            margin: 0 0 0.5rem;
+            margin: 0 0 0.25rem;
         }
 
         h4 {
@@ -190,6 +190,8 @@
 
             .page main .thumbnails {
                 flex-direction: row;
+                gap: 1.375em;
+                column-gap: 1.375em;
                 transition: all 1000ms ease;
             }
         }
@@ -197,37 +199,56 @@
         .hidden {
             display: none;
         }
+
+        .avatar {
+            border-radius: 50%;
+            width: 4em;
+            height: 4em;
+            vertical-align: middle;
+            border: 1px solid rgba(128, 128, 128, 0.5);
+        }
+
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+            column-gap: 1em;
+            align-items: center;
+        }
     </style>
 </head>
 
 <body class="page">
     <header>
-        <hgroup>
-            <h1 class="text-primary">John Alexander</h1>
-            <h4>Designer</h4>
-        </hgroup>
-        <p>John is an award winning designer, designing & developing enterprise level web
-            applications with a focus on user experience and a passion for accessibility.</p>
-        <div><a href="https://calendly.com/johnjohnworks" target="_blank" class="button" title="Schedule a Meeting"><img
-                    src="src/calendar-add-icon.svg" />&nbsp;&nbsp;&nbsp;Schedule a Meeting</a></div>
+        <div class="flex-row">
+            <img src="src/john-avatar.png" class="avatar" alt="JA" />
+            <hgroup>
+                <h1 class="text-primary">John Alexander</h1>
+                <h4>Designer</h4>
+            </hgroup>
+        </div>
+        <p>John is an award-winning designer, creating enterprise level web
+            applications with a focus on user experience and accessibility.</p>
+        <div><a href="https://calendly.com/johnjohnworks/60-minute-meeting" target="_blank" class="button"
+                title="Schedule a Meeting"><img src="src/calendar-add-icon.svg" />&nbsp;&nbsp;&nbsp;Schedule a
+                Meeting</a></div>
         <br />
         <div>
             <a target="_blank" href="https://www.linkedin.com/in/johnjohnworks/" class="button-secondary"
                 title="Connect on LinkedIn"><img src="src/linkedin-icon.svg" /><span class="hidden">LinkedIn</span></a>
-            &nbsp;&nbsp;
+            &nbsp;
             <a target="_blank" href="https://www.figma.com/@johnjohnworks" class="button-secondary"
                 title="View Figma Portfolio"><img src="src/figma-icon.svg" /><span class="hidden">Figma</span></a>
-            &nbsp;&nbsp;
+            &nbsp;
             <a target="_blank" href="https://github.com/johnjohnworks" class="button-secondary"
                 title="View Github Projects"><img src="src/github-icon.svg" /><span class="hidden">Github</span></a>
-            &nbsp;&nbsp;
+            &nbsp;
             <a target="_blank" href="https://www.behance.net/johnjohnworks" class="button-secondary"
                 title="View Behance Portfolio"><img src="src/behance-icon.svg" /><span class="hidden">Behance</span></a>
-            &nbsp;&nbsp;
+            &nbsp;
             <a target="_blank" href="https://dribbble.com/johnjohnworks" class="button-secondary"
                 title="View Dribbble Portfolio"><img src="src/dribbble-icon.svg" /><span
                     class="hidden">Dribbble</span></a>
-            &nbsp;&nbsp;
         </div>
     </header>
     <main>
