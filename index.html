@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>John Alexander &mdash; Designer</title>
+    <title>John Alexander | Designer</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <meta name="description" content="">
@@ -21,13 +21,13 @@
         body {
             font-family: sans-serif;
             color: #575757;
-            margin: 2.75em 2.75em 0px;
+            margin: 2em 2em 0px;
             transition: all 1000ms ease;
         }
 
         .page {
             display: flex;
-            gap: 2.75em;
+            gap: 2em;
             flex-direction: column;
             box-sizing: border-box;
             position: absolute;
@@ -50,6 +50,7 @@
             flex-direction: column;
             gap: 0px;
             column-gap: 0px;
+            transition: all 1000ms ease;
         }
 
         .page main .thumbnails .thumbnail {
@@ -108,10 +109,10 @@
         a.thumb {
             background-position: center center;
             background-repeat: no-repeat;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
+            -webkit-background-size: auto;
+            -moz-background-size: auto;
+            -o-background-size: auto;
+            background-size: auto;
             border: 0.0625em solid #ccc;
             border-radius: 1.375em 1.375em 0px 0px;
             box-sizing: border-box;
@@ -172,21 +173,12 @@
             top: -0.125em;
         }
 
-
-        @media only screen and (min-width: 40em) {
-            body {
-                margin: 5.5em 5.5em 0px;
-            }
-        }
-
-        @media only screen and (min-width: 60em) {
-            h1 {
-                font-size: 2rem;
-            }
+        @media only screen and (min-width: 39em) {
 
             .page {
-                flex-direction: row;
                 align-items: center;
+                flex-direction: row;
+                gap: 2.375em;
                 transition: all 1000ms ease;
             }
 
@@ -197,9 +189,24 @@
 
             .page main .thumbnails {
                 flex-direction: row;
+                gap: 0;
+                column-gap: 0;
+            }
+        }
+
+        @media only screen and (min-width: 60em) {
+            body {
+                margin: 5.5em 5.5em 0px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .page main .thumbnails {
+                flex-direction: row;
                 gap: 1.375em;
                 column-gap: 1.375em;
-                transition: all 1000ms ease;
             }
         }
 
@@ -222,6 +229,10 @@
             column-gap: 1em;
             align-items: center;
         }
+
+        .secondary-links {
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -240,7 +251,7 @@
                 title="Schedule a Meeting"><img src="src/calendar-add-icon.svg" />&nbsp;&nbsp;&nbsp;Schedule a
                 Meeting</a></div>
         <br />
-        <div>
+        <div class="secondary-links">
             <a target="_blank" href="https://www.linkedin.com/in/johnjohnworks/" class="button-secondary"
                 title="Connect on LinkedIn"><img src="src/linkedin-icon.svg" /><span class="hidden">LinkedIn</span></a>
             &nbsp;
