@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>John Alexander &mdash; Designer</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="product designer, user experience, ux, user experience architect, ux architect">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <style>
+        html {
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            color: #575757;
+            margin: 2.75em 2.75em 0px;
+            transition: all 1000ms ease;
+        }
+
+        .page {
+            display: flex;
+            gap: 2.75em;
+            flex-direction: column;
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .page main {
+            flex: auto;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page main .thumbnails {
+            flex: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.375em;
+            column-gap: 1.375em;
+        }
+
+        .page main .thumbnails .thumbnail {
+            flex: auto;
+        }
+
+        .thumb {
+            height: 100%;
+            transition: all 1000ms ease;
+        }
+
+        h1 {
+            font-weight: 100;
+            margin: 0 0 0.5rem;
+        }
+
+        h4 {
+            font-weight: normal;
+            margin: 0;
+            color: black;
+        }
+
+        p {
+            margin-bottom: 2em;
+            line-height: 1.5;
+            max-width: 40em;
+        }
+
+        .text-primary {
+            color: #6200FF;
+        }
+
+        a.button {
+            display: inline-block;
+            border: thin solid #6200ff;
+            color: white;
+            background-color: #6200FF;
+            text-decoration: none;
+            padding: 0.71875em 1em 0.6875em;
+            border-radius: 2em;
+            transition: all 1000ms ease;
+            outline: 0em solid transparent;
+        }
+
+        a.button:hover,
+        a.button:focus {
+            background-color: black;
+            outline: 0.25em solid #6200FF;
+            position: relative;
+            top: -0.125em;
+        }
+
+        a.thumb {
+            background-position: center center;
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            border: 0.0625em solid #ccc;
+            border-radius: 1.375em 1.375em 0px 0px;
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            text-decoration: none;
+            transition: all 1000ms ease;
+            outline: 0em solid transparent;
+
+        }
+
+        a.thumb:hover {
+            border-color: #6200FF;
+            outline: 0.5em solid #6200ff;
+            position: relative;
+            top: -0.125em;
+        }
+
+        a.thumb:focus {
+            border-color: #ffffff;
+            outline: 0.75em solid #6200FF;
+            position: relative;
+            top: -0.125em;
+        }
+
+        #id-thumb-case-study-1 {
+            background-image: url(url/devilish-icons-social.png);
+        }
+
+        #id-thumb-case-study-2 {
+            background-image: url(url/beta-ui-kit-social.png);
+        }
+
+        #id-thumb-case-study-3 {
+            background-image: url(url/beta-os22-social.png);
+        }
+
+        a.button-secondary {
+            display: inline-block;
+            border: 0.0625em solid #6200ff;
+            color: #6200FF;
+            background-color: white;
+            text-decoration: none;
+            padding: 0.71875em 0.8125em 0.6875em;
+            border-radius: 1.365em;
+            outline: 0em solid transparent;
+            transition: all 1000ms ease;
+        }
+
+        a.button-secondary:hover,
+        a.button-secondary:focus {
+            background-color: #e6e6e6;
+            border-color: white;
+            color: black;
+            outline: 0.25em solid black;
+            position: relative;
+            top: -0.125em;
+        }
+
+
+        @media only screen and (min-width: 40em) {
+            body {
+                margin: 5.5em 5.5em 0px;
+            }
+        }
+
+        @media only screen and (min-width: 60em) {
+            .page {
+                flex-direction: row;
+                align-items: center;
+                transition: all 1000ms ease;
+            }
+
+            .page header {
+                width: 20em;
+                transition: all 1000ms ease;
+            }
+
+            .page main .thumbnails {
+                flex-direction: row;
+                transition: all 1000ms ease;
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="page">
+    <header>
+        <hgroup>
+            <h1 class="text-primary">John Alexander</h1>
+            <h4>Designer</h4>
+        </hgroup>
+        <p>John is an award winning designer, designing & developing enterprise level web
+            applications with a focus on user experience and a passion for accessibility.</p>
+        <div><a href="https://calendly.com/johnjohnworks" target="_blank" class="button" title="Schedule a Meeting"><img
+                    src="src/calendar-add-icon.svg" />&nbsp;&nbsp;&nbsp;Schedule a Meeting</a></div>
+        <br />
+        <div>
+            <a target="_blank" href="https://www.linkedin.com/in/johnjohnworks/" class="button-secondary"
+                title="Connect on LinkedIn"><img src="src/linkedin-icon.svg" /><span class="hidden">LinkedIn</span></a>
+            &nbsp;&nbsp;
+            <a target="_blank" href="https://www.figma.com/@johnjohnworks" class="button-secondary"
+                title="View Figma Portfolio"><img src="src/figma-icon.svg" /><span class="hidden">Figma</span></a>
+            &nbsp;&nbsp;
+            <a target="_blank" href="https://github.com/johnjohnworks" class="button-secondary"
+                title="View Github Projects"><img src="src/github-icon.svg" /><span class="hidden">Github</span></a>
+            &nbsp;&nbsp;
+            <a target="_blank" href="https://www.behance.net/johnjohnworks" class="button-secondary"
+                title="View Behance Portfolio"><img src="src/behance-icon.svg" /><span class="hidden">Behance</span></a>
+            &nbsp;&nbsp;
+            <a target="_blank" href="https://dribbble.com/johnjohnworks" class="button-secondary"
+                title="View Dribbble Portfolio"><img src="src/dribbble-icon.svg" /><span
+                    class="hidden">Dribbble</span></a>
+            &nbsp;&nbsp;
+        </div>
+    </header>
+    <main>
+        <div><small>Portfolio</small></div>
+        <br />
+        <div class="thumbnails">
+            <div class="thumbnail"><a href="https://www.figma.com/community/file/1119940627973538564" class="thumb"
+                    id="id-thumb-case-study-1" title="Devilish Icons" target="_blank">&nbsp;</a></div>
+            <div class="thumbnail"><a href="https://www.figma.com/community/file/1124976988219339372" class="thumb"
+                    id="id-thumb-case-study-2" title="Beta UI Kit" target="_blank">&nbsp;</a></div>
+            <div class="thumbnail"><a href="https://www.figma.com/community/file/1095639605803636403" class="thumb"
+                    id="id-thumb-case-study-3" title="Beta OS22 Design System" target="_blank">&nbsp;</a></div>
+        </div>
+    </main>
+</body>
+
+</html>
