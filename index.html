@@ -62,12 +62,14 @@
         }
 
         h1 {
-            font-weight: 100;
+            font-size: 1.5rem;
+            font-weight: 400;
             margin: 0 0 0.25rem;
+            transition: all 1000ms ease;
         }
 
         h4 {
-            font-weight: normal;
+            font-weight: 500;
             margin: 0;
             color: black;
         }
@@ -92,6 +94,7 @@
             border-radius: 2em;
             transition: all 1000ms ease;
             outline: 0em solid transparent;
+            display: block;
         }
 
         a.button:hover,
@@ -177,6 +180,10 @@
         }
 
         @media only screen and (min-width: 60em) {
+            h1 {
+                font-size: 2rem;
+            }
+
             .page {
                 flex-direction: row;
                 align-items: center;
@@ -227,7 +234,7 @@
                 <h4>Designer</h4>
             </hgroup>
         </div>
-        <p>John is an award-winning designer, creating enterprise level web
+        <p>John is an award-winning designer, creating enterprise-level web
             applications with a focus on user experience and accessibility.</p>
         <div><a href="https://calendly.com/johnjohnworks/60-minute-meeting" target="_blank" class="button"
                 title="Schedule a Meeting"><img src="src/calendar-add-icon.svg" />&nbsp;&nbsp;&nbsp;Schedule a
@@ -252,8 +259,6 @@
         </div>
     </header>
     <main>
-        <div><small>Portfolio</small></div>
-        <br />
         <div class="thumbnails">
             <div class="thumbnail"><a href="https://www.figma.com/community/file/1119940627973538564" class="thumb"
                     id="id-thumb-case-study-1" title="Devilish Icons" target="_blank">&nbsp;</a></div>
