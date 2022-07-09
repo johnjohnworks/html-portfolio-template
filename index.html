@@ -91,17 +91,24 @@
             color: white;
             background-color: #6200FF;
             text-decoration: none;
-            padding: 0.71875em 1em 0.6875em;
+            padding: 0px 0.3125em;
             border-radius: 2em;
             transition: all 1000ms ease;
             outline: 0em solid transparent;
             display: block;
+            line-height: 2.625em;
         }
 
         a.button:hover,
         a.button:focus {
             background-color: black;
             outline: 0.25em solid #6200FF;
+            position: relative;
+            top: -0.125em;
+        }
+
+        a.button img {
+            vertical-align: middle;
             position: relative;
             top: -0.125em;
         }
@@ -234,6 +241,15 @@
             text-align: center;
         }
     </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D67WGP2Z23"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-D67WGP2Z23');
+    </script>
 </head>
 
 <body class="page">
@@ -248,7 +264,7 @@
         <p>John is an award-winning designer, creating enterprise-level web
             applications with a focus on user experience and accessibility.</p>
         <div><a href="https://calendly.com/johnjohnworks/60-minute-meeting" target="_blank" class="button"
-                title="Schedule a Meeting"><img src="src/calendar-add-icon.svg" />&nbsp;&nbsp;&nbsp;Schedule a
+                title="Schedule a Meeting"><img src="src/calendar-add-icon.svg" />&nbsp;Schedule a
                 Meeting</a></div>
         <br />
         <div class="secondary-links">
