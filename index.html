@@ -7,12 +7,27 @@
     <title>John Alexander | Designer</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-    <meta name="description" content="">
-    <meta name="keywords" content="product designer, user experience, ux, user experience architect, ux architect">
+    <meta name="description"
+        content="John is an award-winning designer, creating enterprise-level web applications with a focus on user experience and accessibility.">
+    <meta name="keywords"
+        content="product designer, user experience, ux, user experience architect, ux designer, ux architect">
+    <meta name="author" content="John Alexander">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <style>
+        @keyframes slideUp {
+            0% {
+                transform: translateY(-2.5%);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0%);
+                opacity: 1;
+            }
+        }
+
         html {
             height: 100%;
             box-sizing: border-box;
@@ -58,6 +73,8 @@
         }
 
         .thumb {
+
+            animation: 3s ease 0s 1 slideUp;
             height: 100%;
             transition: all 1000ms ease;
         }
@@ -115,13 +132,14 @@
 
         a.thumb {
             background-position: center center;
-            background-repeat: no-repeat;
+            background-repeat: repeat;
             -webkit-background-size: auto;
             -moz-background-size: auto;
             -o-background-size: auto;
             background-size: auto;
-            border: 0.0625em solid #ccc;
+            border: 0.0625em solid rgba(128, 128, 128, 0.5);
             border-radius: 1.375em 1.375em 0px 0px;
+            border-bottom: .0625em solid black;
             box-sizing: border-box;
             display: block;
             width: 100%;
