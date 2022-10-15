@@ -1,0 +1,287 @@
+@keyframes slideUp {
+    0% {
+        transform: translateY(-2.5%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #e6e6e6;
+    color: #575757;
+    font-family: system-ui, sans-serif;
+    margin: 0em;
+    transition: all 1000ms ease;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.page main {
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.25), rgba(230, 230, 230, 0.25));
+    border-radius: 0.625em;
+    flex: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.page main .thumbnails {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    transition: all 1000ms ease;
+}
+
+.page main .thumbnails .thumbnail {
+    flex: auto;
+}
+
+.classHeader {
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.75), rgba(230, 230, 230, 0.9));
+    border-radius: 0.625em;
+    margin: 0em;
+    padding: 2em;
+}
+
+.thumb {
+
+    animation: 3s ease 0s 1 slideUp;
+    height: 100%;
+    transition: all 1000ms ease;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0 0 0.25rem;
+    transition: all 1000ms ease;
+}
+
+h4 {
+    font-weight: 500;
+    margin: 0;
+}
+
+p {
+    margin-bottom: 2em;
+    line-height: 1.5;
+    max-width: 40em;
+    color: black;
+}
+
+.text-primary {
+    color: #6200FF;
+    background: linear-gradient(to right bottom,
+            #2151ff,
+            #6200FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+a.button {
+    display: inline-block;
+    border: thin solid #6200ff;
+    color: white;
+    background-color: #6200FF;
+    background-image: linear-gradient(to right bottom, #2151ff, #6200FF);
+    border: 0.0625em dotted black;
+    text-decoration: none;
+    padding: 0px 0.3125em;
+    border-radius: 0.25em;
+    transition: all 1000ms ease;
+    outline: 0em solid transparent;
+    display: block;
+    line-height: 2.625em;
+}
+
+a.button:hover,
+a.button:focus {
+    background-color: black;
+    background-image: none;
+    ;
+    outline: 0.25em solid white;
+    position: relative;
+    top: -0.125em;
+}
+
+a.button img {
+    vertical-align: middle;
+    position: relative;
+    top: -0.125em;
+}
+
+a.thumb {
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border: 0.0625em solid rgba(128, 128, 128, 0.5);
+    border-radius: 0.625em;
+    border-bottom: 0.0625em solid black;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 1000ms ease;
+    outline: 0em solid transparent;
+    opacity: 0.9;
+
+}
+
+
+a.thumb:focus {
+    border-color: #ffffff;
+    outline: 0.75em solid white;
+    position: relative;
+    top: -0.125em;
+    opacity: 1;
+}
+
+a.thumb:hover {
+    border-color: #6200ff;
+    border-style: solid;
+    outline: 0.5em solid #6200ff;
+    position: relative;
+    top: -0.125em;
+    opacity: 1;
+}
+
+#id-thumb-case-study-1 {
+    background-image: url(../url/devilish-icons-social.png);
+}
+
+#id-thumb-case-study-2 {
+    background-image: url(../url/beta-ui-kit-social.png);
+}
+
+#id-thumb-case-study-3 {
+    background-image: url(../url/beta-os22-social.png);
+}
+
+a.button-secondary {
+    display: inline-block;
+    border: 0.0625em solid #6200ff;
+    color: #6200FF;
+    background-color: white;
+    text-decoration: none;
+    padding: 0.71875em 0.8125em 0.6875em;
+    border-radius: 1.365em;
+    outline: 0em solid transparent;
+    transition: all 1000ms ease;
+}
+
+a.button-secondary:hover,
+a.button-secondary:focus {
+    background-color: #e6e6e6;
+    border-color: white;
+    color: black;
+    outline: 0.25em solid black;
+    position: relative;
+    top: -0.125em;
+}
+
+@media only screen and (min-width: 48em) {
+
+    .page {
+        align-items: center;
+        flex-direction: row;
+        transition: all 1000ms ease;
+    }
+
+    .page header {
+        width: 20em;
+        transition: all 1000ms ease;
+    }
+
+    .page main .thumbnails {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+    body {
+        margin: 2em 1em;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .page main .thumbnails {
+        flex-direction: row;
+        gap: 0.75em;
+        column-gap: 0.75em;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    vertical-align: middle;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75em;
+    column-gap: 0.75em;
+    align-items: center;
+}
+
+.secondary-links {
+    text-align: center;
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.resume-link {
+    color: black;
+    transition: all 1000ms ease;
+}
+
+.resume-link:hover,
+.resume-link:focus {
+    color: white;
+    background-color: black;
+    border-color: #6200FF;
+    outline: 4px solid #6200FF;
+    text-decoration: none;
+    border-radius: 1.5em;
+}
