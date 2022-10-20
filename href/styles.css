@@ -23,10 +23,13 @@ body {
     -o-background-size: cover;
     background-size: cover;
     background-color: #e6e6e6;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.75), rgba(230, 230, 230, 0.9));
     color: #575757;
     font-family: system-ui, sans-serif;
     margin: 0em;
+    overflow: hidden;
     transition: all 1000ms ease;
+    text-align: right;
 }
 
 .page {
@@ -47,7 +50,6 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 1em;
 }
 
 .page main .thumbnails {
@@ -62,8 +64,6 @@ body {
 }
 
 .classHeader {
-    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.75), rgba(230, 230, 230, 0.9));
-    border-radius: 0.625em;
     margin: 0em;
     padding: 2em;
 }
@@ -76,14 +76,17 @@ body {
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 2.2em;
     font-weight: 400;
-    margin: 0 0 0.25rem;
+    margin: 0;
     transition: all 1000ms ease;
+    text-align: right;
 }
 
 h4 {
+    font-size: 1.1em;
     font-weight: 500;
+    text-align: right;
     margin: 0;
 }
 
@@ -112,11 +115,10 @@ a.button {
     background-image: linear-gradient(to right bottom, #2151ff, #6200FF);
     border: 0.0625em dotted black;
     text-decoration: none;
-    padding: 0px 0.3125em;
-    border-radius: 0.25em;
+    padding: 0em 0.75em;
+    border-radius: 1.375em;
     transition: all 1000ms ease;
     outline: 0em solid transparent;
-    display: block;
     line-height: 2.625em;
 }
 
@@ -143,8 +145,6 @@ a.thumb {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    border: 0.0625em solid rgba(128, 128, 128, 0.5);
-    border-radius: 0.625em;
     border-bottom: 0.0625em solid black;
     box-sizing: border-box;
     display: block;
@@ -209,6 +209,12 @@ a.button-secondary:focus {
     top: -0.125em;
 }
 
+@media only screen and (max-width: 48em) {
+    .hideMobile {
+        display: none;
+    }
+}
+
 @media only screen and (min-width: 48em) {
 
     .page {
@@ -228,18 +234,8 @@ a.button-secondary:focus {
 }
 
 @media only screen and (min-width: 60em) {
-    body {
-        margin: 2em 1em;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
     .page main .thumbnails {
         flex-direction: row;
-        gap: 0.75em;
-        column-gap: 0.75em;
     }
 }
 
@@ -258,17 +254,24 @@ a.button-secondary:focus {
 .flex-row {
     display: flex;
     flex-direction: row;
-    gap: 0.75em;
-    column-gap: 0.75em;
     align-items: center;
 }
 
-.secondary-links {
-    text-align: center;
+.flex-column {
     display: flex;
-    flex: auto;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.gap {
+    gap: 1em;
+}
+
+.secondary-links {
+    text-align: right;
 }
 
 .resume-link {
