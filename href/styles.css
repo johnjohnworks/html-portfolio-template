@@ -16,20 +16,12 @@ html {
 }
 
 body {
-    background-position: center center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-color: #e6e6e6;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.75), rgba(230, 230, 230, 0.9));
+    background-color: #ffffff;
     color: #575757;
     font-family: system-ui, sans-serif;
     margin: 0em;
     overflow: hidden;
     transition: all 1000ms ease;
-    text-align: right;
 }
 
 .page {
@@ -55,7 +47,7 @@ body {
 .page main .thumbnails {
     flex: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     transition: all 1000ms ease;
 }
 
@@ -65,7 +57,7 @@ body {
 
 .classHeader {
     margin: 0em;
-    padding: 2em;
+    order: 2;
 }
 
 .thumb {
@@ -76,22 +68,20 @@ body {
 }
 
 h1 {
-    font-size: 2.2em;
-    font-weight: 400;
+    font-size: 1.5em;
+    font-weight: 600;
     margin: 0;
     transition: all 1000ms ease;
-    text-align: right;
 }
 
 h4 {
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 500;
-    text-align: right;
     margin: 0;
 }
 
 p {
-    margin-bottom: 2em;
+    margin: 0em;
     line-height: 1.5;
     max-width: 40em;
     color: black;
@@ -109,7 +99,7 @@ p {
 
 a.button {
     display: inline-block;
-    border: thin solid #6200ff;
+    border: thin dotted #6200ff;
     color: white;
     background-color: #6200FF;
     background-image: linear-gradient(to right bottom, #2151ff, #6200FF);
@@ -189,7 +179,7 @@ a.thumb:hover {
 
 a.button-secondary {
     display: inline-block;
-    border: 0.0625em solid #6200ff;
+    border: 0.0625em dotted #6200ff;
     color: #6200FF;
     background-color: white;
     text-decoration: none;
@@ -209,13 +199,13 @@ a.button-secondary:focus {
     top: -0.125em;
 }
 
-@media only screen and (max-width: 48em) {
+@media only screen and (max-width: 40em) {
     .hideMobile {
         display: none;
     }
 }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 39em) {
 
     .page {
         align-items: center;
@@ -226,6 +216,7 @@ a.button-secondary:focus {
     .page header {
         width: 20em;
         transition: all 1000ms ease;
+        order: 2;
     }
 
     .page main .thumbnails {
@@ -271,7 +262,7 @@ a.button-secondary:focus {
 }
 
 .secondary-links {
-    text-align: right;
+    padding: 0em 1.5em;
 }
 
 .resume-link {
@@ -287,4 +278,13 @@ a.button-secondary:focus {
     outline: 4px solid #6200FF;
     text-decoration: none;
     border-radius: 1.5em;
+}
+
+.classPadding {
+    padding: 2em 1.5em;
+}
+
+.classAbout {
+    font-weight: 300;
+    color: #575757;
 }
