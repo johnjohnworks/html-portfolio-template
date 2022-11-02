@@ -144,25 +144,17 @@ a.thumb {
     transition: all 1000ms ease;
     outline: 0em solid transparent;
     opacity: 0.9;
-
 }
 
-
-a.thumb:focus {
-    border-color: #ffffff;
-    outline: 0.75em solid white;
-    position: relative;
-    top: -0.125em;
-    opacity: 1;
-}
-
+a.thumb:focus,
 a.thumb:hover {
     border-color: #6200ff;
     border-style: solid;
+    opacity: 1;
     outline: 0.5em solid #6200ff;
     position: relative;
     top: -0.125em;
-    opacity: 1;
+    z-index: 9999;
 }
 
 #id-thumb-case-study-1 {
