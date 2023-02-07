@@ -88,21 +88,14 @@ p {
 }
 
 .text-primary {
-    color: #6200FF;
-    background: linear-gradient(to right bottom,
-            #2151ff,
-            #6200FF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #2151ff;
 }
 
 a.button {
-    display: inline-block;
-    border: thin dotted #6200ff;
+    display: block;
+    border: thin dotted #2151ff;
     color: white;
-    background-color: #6200FF;
-    background-image: linear-gradient(to right bottom, #2151ff, #6200FF);
+    background-color: #2151ff;
     border: 0.0625em dotted black;
     text-decoration: none;
     padding: 0em 0.75em;
@@ -148,10 +141,10 @@ a.thumb {
 
 a.thumb:focus,
 a.thumb:hover {
-    border-color: #6200ff;
+    border-color: #2151ff;
     border-style: solid;
     opacity: 1;
-    outline: 0.5em solid #6200ff;
+    outline: 0.5em solid #2151ff;
     position: relative;
     top: -0.125em;
     z-index: 9999;
@@ -171,8 +164,7 @@ a.thumb:hover {
 
 a.button-secondary {
     display: inline-block;
-    border: 0.0625em dotted #6200ff;
-    color: #6200FF;
+    color: #2151ff;
     background-color: white;
     text-decoration: none;
     padding: 0.71875em 0.8125em 0.6875em;
@@ -183,10 +175,9 @@ a.button-secondary {
 
 a.button-secondary:hover,
 a.button-secondary:focus {
-    background-color: #e6e6e6;
-    border-color: white;
+    background-color: #2151ff25;
+    border-color: transparent;
     color: black;
-    outline: 0.25em solid black;
     position: relative;
     top: -0.125em;
 }
@@ -266,8 +257,8 @@ a.button-secondary:focus {
 .resume-link:focus {
     color: white;
     background-color: black;
-    border-color: #6200FF;
-    outline: 4px solid #6200FF;
+    border-color: #2151ff;
+    outline: 4px solid #2151ff;
     text-decoration: none;
     border-radius: 1.5em;
 }
