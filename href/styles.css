@@ -93,10 +93,8 @@ p {
 
 a.button {
     display: block;
-    border: thin dotted #2151ff;
     color: white;
     background-color: #2151ff;
-    border: 0.0625em dotted black;
     text-decoration: none;
     padding: 0em 0.75em;
     border-radius: 1.375em;
