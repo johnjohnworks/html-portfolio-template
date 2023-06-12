@@ -11,16 +11,16 @@
 }
 
 :root {
-    --backgroundColor1: #2E3133;
-    --backgroundColor2: #232526;
-    --backgroundColor3: #544021;
+    --backgroundColor1: #824c00;
+    --backgroundColor2: #363d40;
+    --backgroundColor3: #2b3033;
     --borderColor: rgba(128, 128, 128, 0.25);
     --borderBottomColor: #000000;
     --borderRadius: 1.5em;
     --borderTopColor: rgba(255, 255, 255, 0.15);
-    --color1: #FFC163;
+    --color1: #FFC573;
     --fontColor1: #ffffff;
-    --fontColor2: #CCC8C4;
+    --fontColor2: #CCC9C4;
     --padding: 1.5em;
 }
 
@@ -30,7 +30,7 @@ html {
 }
 
 body {
-    background-color: var(--backgroundColor2);
+    background-color: var(--backgroundColor3);
     color: var(--fontColor2);
     font-family: system-ui, sans-serif;
     margin: 0em;
@@ -58,6 +58,7 @@ a.button:focus {
     outline: 0.25em solid var(--color1);
     position: relative;
     top: -0.125em;
+    transition: all 1000ms ease;
 }
 
 a.button img {
@@ -66,96 +67,29 @@ a.button img {
     top: -0.125em;
 }
 
-.avatar {
-    border-radius: 50%;
-    width: 4em;
-    height: 4em;
-    vertical-align: middle;
-    border: 1px solid rgba(128, 128, 128, 0.5);
-}
-
-.classHeader {
-    margin: 2em;
-    order: 2;
-}
-
-.color1 {
-    color: var(--color1);
-}
-
-.fontColor1 {
-    color: var(--fontColor1);
-}
-
-.fontColor2 {
+a.button2 {
+    display: inline-block;
     color: var(--fontColor2);
-}
-
-h1 {
-    color: var(--color1);
-    font-size: 1.75em;
-    font-weight: 600;
-    margin: 0;
+    text-decoration: none;
+    padding: 0.71875em 0.8125em 0.6875em;
+    border-radius: 1.365em;
+    outline: 0em solid transparent;
     transition: all 1000ms ease;
 }
 
-h4 {
-    font-size: 1em;
-    font-weight: 500;
-    margin: 0;
-}
-
-nav {
+a.button2:hover,
+a.button2:focus {
     background-color: var(--backgroundColor1);
-    border-radius: var(--borderRadius);
-    display: flex;
-    flex-direction: column;
-    padding: 0.75em 0px;
-}
-
-p {
-    color: var(--fontColor2);
-    line-height: 1.5;
-    margin: 0em;
-    max-width: 40em;
-}
-
-.page {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.page main {
-    display: flex;
-    flex: auto;
-    flex-direction: column;
-    height: 100%;
-    padding: var(--padding);
-}
-
-.page main .thumbnails {
-    display: flex;
-    flex: auto;
-    flex-direction: column;
-    gap: 1em;
+    border-color: transparent;
+    color: black;
+    position: relative;
+    top: -0.125em;
     transition: all 1000ms ease;
 }
 
-.page main .thumbnails .thumbnail {
-    border-radius: 1.5em;
-    flex: auto;
-}
-
-.thumb {
-    animation: 3s ease 0s 1 slideUp;
-    border-radius: 1.5em;
-    height: 100%;
+a.button2:hover .icon,
+a.button2:focus .icon {
+    fill: var(--fontColor1);
     transition: all 1000ms ease;
 }
 
@@ -191,48 +125,63 @@ a.thumb:hover {
     z-index: 9999;
 }
 
-.classAbout {
-    font-weight: 300;
+.avatar {
+    border-radius: 50%;
+    width: 3.75em;
+    height: 3.75em;
+    vertical-align: middle;
+    border: 1px solid rgba(128, 128, 128, 0.5);
 }
 
-.classPadding {
-    padding: var(--padding);
+.header {
+    margin: 2em;
+    order: 2;
 }
 
-#id-thumb-case-study-1 {
-    background-image: url(../url/devilish-glyphs-social.png);
+.color1 {
+    color: var(--color1);
 }
 
-#id-thumb-case-study-2 {
-    background-image: url(../url/beta-ui-kit-social.png);
+.fontColor1 {
+    color: var(--fontColor1);
 }
 
-#id-thumb-case-study-3 {
-    background-image: url(../url/beta-os23-social.png);
-}
-
-a.button2 {
-    display: inline-block;
+.fontColor2 {
     color: var(--fontColor2);
-    text-decoration: none;
-    padding: 0.71875em 0.8125em 0.6875em;
-    border-radius: 1.365em;
-    outline: 0em solid transparent;
+}
+
+.gap {
+    gap: 1em;
+}
+
+.gapSmall {
+    gap: 1em;
+}
+
+.gapMedium {
+    gap: 1.5em;
+}
+
+.gapLarge {
+    gap: 2em;
+}
+
+h1 {
+    color: var(--color1);
+    font-size: 1.75em;
+    font-weight: 600;
+    margin: 0;
     transition: all 1000ms ease;
 }
 
-a.button2:hover,
-a.button2:focus {
-    background-color: var(--backgroundColor3);
-    border-color: transparent;
-    color: black;
-    position: relative;
-    top: -0.125em;
+h4 {
+    font-size: 1em;
+    font-weight: 500;
+    margin: 0;
 }
 
-a.button2:hover .icon,
-a.button2:focus .icon {
-    fill: var(--fontColor1);
+.classAbout {
+    font-weight: 300;
 }
 
 .flexColumn {
@@ -249,10 +198,6 @@ a.button2:focus .icon {
     flex-direction: row;
 }
 
-.gap {
-    gap: 1em;
-}
-
 .hidden {
     display: none;
 }
@@ -262,19 +207,96 @@ a.button2:focus .icon {
     transition: all 1000ms ease;
 }
 
-.resume-link {
+nav {
+    background-color: var(--backgroundColor2);
+    border-color: var(--borderColor);
+    border-bottom-color: var(--borderBottomColor);
+    border-radius: var(--borderRadius);
+    border-style: solid;
+    border-top-color: var(--borderTopColor);
+    border-width: 0.0625em;
+    display: flex;
+    flex-direction: column;
+    height: 8em;
+    padding: 0.75em 0px;
+}
+
+p {
     color: var(--fontColor2);
+    line-height: 1.5;
+    margin: 0em;
+    max-width: 40em;
+}
+
+.padding {
+    padding: var(--padding);
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.page main {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    height: 100%;
+}
+
+.page main .thumbnails {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
     transition: all 1000ms ease;
 }
 
-.resume-link:hover,
-.resume-link:focus {
-    color: black;
+.page main .thumbnails .thumbnail {
+    flex: auto;
+}
+
+.thumb {
+    animation: 3s ease 0s 1 slideUp;
+    height: 100%;
+    transition: all 1000ms ease;
+}
+
+.resumeLink {
+    color: var(--fontColor1);
+    transition: all 1000ms ease;
+}
+
+.resumeLink:hover,
+.resumeLink:focus {
     background-color: white;
+    border-radius: 1.5em;
     border-color: white;
+    color: black;
     outline: 4px solid white;
     text-decoration: none;
-    border-radius: 1.5em;
+    transition: all 1000ms ease;
+}
+
+.textRight {
+    text-align: right;
+}
+
+#id-thumb-case-study-1 {
+    background-image: url(../url/devilish-glyphs-social.png);
+}
+
+#id-thumb-case-study-2 {
+    background-image: url(../url/beta-ui-kit-social.png);
+}
+
+#id-thumb-case-study-3 {
+    background-image: url(../url/beta-os23-social.png);
 }
 
 @media only screen and (max-width: 40em) {
@@ -283,11 +305,10 @@ a.button2:focus .icon {
     }
 }
 
-@media only screen and (min-width: 39em) {
+@media only screen and (min-width: 38em) {
 
     .page {
         flex-direction: row;
-        padding: 1.5em;
         transition: all 1000ms ease;
     }
 
@@ -295,12 +316,5 @@ a.button2:focus .icon {
         width: 20em;
         transition: all 1000ms ease;
         order: 2;
-    }
-}
-
-@media only screen and (min-width: 59em) {
-
-    .page {
-        padding: 3.5em;
     }
 }
