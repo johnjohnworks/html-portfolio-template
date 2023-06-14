@@ -125,21 +125,43 @@ a.thumb:hover {
     z-index: 9999;
 }
 
+.alignItemsCenter,
+.alignCenter {
+    align-items: center;
+}
+
 .avatar {
     border-radius: 50%;
-    width: 3.75em;
-    height: 3.75em;
+    width: 3em;
+    height: 3em;
     vertical-align: middle;
     border: 1px solid rgba(128, 128, 128, 0.5);
 }
 
-.header {
-    margin: 2em;
-    order: 2;
+.card {
+    padding: 1em 0px 0px 1em;
+}
+
+.classAbout {
+    font-weight: 300;
 }
 
 .color1 {
     color: var(--color1);
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexGrow {
+    flex-grow: 1;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
 }
 
 .fontColor1 {
@@ -168,7 +190,7 @@ a.thumb:hover {
 
 h1 {
     color: var(--color1);
-    font-size: 1.75em;
+    font-size: 1.25em;
     font-weight: 600;
     margin: 0;
     transition: all 1000ms ease;
@@ -178,24 +200,12 @@ h4 {
     font-size: 1em;
     font-weight: 500;
     margin: 0;
+    transition: all 1000ms ease;
 }
 
-.classAbout {
-    font-weight: 300;
-}
-
-.flexColumn {
-    display: flex;
-    flex-direction: column;
-}
-
-.flexGrow {
-    flex-grow: 1;
-}
-
-.flexRow {
-    display: flex;
-    flex-direction: row;
+.header {
+    box-sizing: border-box;
+    order: 2;
 }
 
 .hidden {
@@ -207,18 +217,17 @@ h4 {
     transition: all 1000ms ease;
 }
 
+.justifyContentCenter,
+.justifyCenter {
+    justify-content: center;
+}
+
 nav {
-    background-color: var(--backgroundColor2);
-    border-color: var(--borderColor);
-    border-bottom-color: var(--borderBottomColor);
-    border-radius: var(--borderRadius);
-    border-style: solid;
-    border-top-color: var(--borderTopColor);
-    border-width: 0.0625em;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    height: 8em;
-    padding: 0.75em 0px;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 p {
@@ -261,11 +270,6 @@ p {
     flex: auto;
 }
 
-.thumb {
-    animation: 3s ease 0s 1 slideUp;
-    height: 100%;
-    transition: all 1000ms ease;
-}
 
 .resumeLink {
     color: var(--fontColor1);
@@ -287,6 +291,18 @@ p {
     text-align: right;
 }
 
+.thumb {
+    animation: 3s ease 0s 1 slideUp;
+    height: 100%;
+    transition: all 1000ms ease;
+}
+
+#buttonPrimary1 {
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    margin-top: 0.75em;
+}
+
 #id-thumb-case-study-1 {
     background-image: url(../url/devilish-glyphs-social.png);
 }
@@ -305,16 +321,30 @@ p {
     }
 }
 
-@media only screen and (min-width: 38em) {
+/* Tablet */
+@media only screen and (min-width: 34em) {
 
     .page {
+        align-items: center;
         flex-direction: row;
         transition: all 1000ms ease;
     }
 
     .page header {
-        width: 20em;
-        transition: all 1000ms ease;
         order: 2;
+        overflow: auto;
+        transition: all 1000ms ease;
+        width: 20em;
+    }
+
+    .card {
+        padding: 1.5em 0px 2em 2em;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 64.0625em) {
+    .card {
+        padding: 2em 0px 2em 2em;
     }
 }
