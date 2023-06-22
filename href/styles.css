@@ -266,15 +266,6 @@ a.thumb:hover {
     flex-direction: row;
 }
 
-footer {
-    border-radius: var(--borderRadius);
-    position: fixed;
-    right: 0;
-    text-align: right;
-    top: 0;
-    z-index: 10000;
-}
-
 .dark.fontColor1,
 .dark .fontColor1 {
     color: var(--darkFont1);
@@ -293,6 +284,15 @@ footer {
 .light.fontColor2,
 .light .fontColor2 {
     color: var(--lightFont2);
+}
+
+footer {
+    border-radius: var(--borderRadius);
+    position: fixed;
+    left: 0;
+    text-align: left;
+    top: 0;
+    z-index: 10000;
 }
 
 .gap {
@@ -461,7 +461,7 @@ p.light {
 #themeButton {
     background: none;
     border: none;
-    border-radius: 0px 0px 0px 50%;
+    border-radius: 0px 0px 50% 0px;
     cursor: pointer;
     padding: 0.75em 0.875em;
 }
