@@ -92,11 +92,11 @@ a.button.light {
     color: var(--lightBackground1);
 }
 
-.dark a.button svg.icon {
+.dark a.button .icon {
     fill: black;
 }
 
-.light a.button svg.icon {
+.light a.button .icon {
     fill: white;
 }
 
@@ -116,8 +116,8 @@ a.button:focus {
     outline-color: var(--darkColor1);
 }
 
-.dark a.button:hover svg.icon,
-.dark a.button:focus svg.icon {
+.dark a.button:hover .icon,
+.dark a.button:focus .icon {
     fill: white;
 }
 
@@ -128,8 +128,8 @@ a.button:focus {
     outline-color: var(--lightColor1);
 }
 
-.light a.button:hover svg.icon,
-.light a.button:focus svg.icon {
+.light a.button:hover .icon,
+.light a.button:focus .icon {
     fill: black;
 }
 
@@ -250,6 +250,10 @@ a.thumb:hover {
 .light .color1,
 .light.color1 {
     color: var(--lightColor1);
+}
+
+.div {
+    backdrop-filter: blur(16px);
 }
 
 .flexColumn {
@@ -504,16 +508,28 @@ p.light {
     margin-top: 0.75em;
 }
 
+.dark #buttonPirmary1 .icon,
+.dark #buttonPrimary1:hover .icon,
+.dark #buttonPrimary1:focus .icon {
+    fill: var(--darkBackground2);
+}
+
+.light #buttonPirmary1 .icon,
+.light #buttonPrimary1:hover .icon,
+.light #buttonPrimary1:focus .icon {
+    fill: var(--lightBackground2);
+}
+
 #id-thumb-case-study-1 {
-    background-image: url(../url/devilish-glyphs-social.png);
+    background-image: url(../url/devilish-icons-and-fonts-social.png);
 }
 
 #id-thumb-case-study-2 {
-    background-image: url(../url/beta-ui-kit-social.png);
+    background-image: url(../url/augmented-reality-ui-kit-social.png);
 }
 
 #id-thumb-case-study-3 {
-    background-image: url(../url/beta-os23-social.png);
+    background-image: url(../url/ai-design-templates-social.png);
 }
 
 /* End IDs */
