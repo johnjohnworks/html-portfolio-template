@@ -1,8 +1,8 @@
 :root {
     /* CSS Variables */
     --borderRadius: 1.5em;
-    --borderWidth: 0.375em;
-    --fontFamily: system-ui;
+    --borderWidth: thin;
+    --fontFamily: system-ui, sans-serif;
     --gap: 1em;
     --gapSmall: 0.75em;
     --gapMedium: 1em;
@@ -15,7 +15,7 @@
     --paddingSmall: 1em;
     --paddingMedium: 1.5em;
     --paddingLarge: 2em;
-    --animationDuration: 1s;
+    --animationDuration: 400ms;
     --animationTimingFunction: cubic-bezier(0.25, 0.1, 0.25, 1);
 
     /* Gray Colors */
@@ -28,9 +28,9 @@
 
     /* Dark Theme */
     --darkBackground1: #1F6100;
-    --darkBackground2: #363d40;
-    --darkBackground3: #2b3033;
-    --darkColor1: #96E371;
+    --darkBackground2: #2A4020;
+    --darkBackground3: #212121;
+    --darkColor1: #E3C671;
     --darkFont1: #ffffff;
     --darkFont2: #CDCFCC;
 
